@@ -11,7 +11,7 @@ RUN apt-get update && \
 # Install additional ros packages
 RUN apt-get update && apt-get install ros-noetic-rosbridge-server ros-noetic-joy python3-catkin-tools -y
 RUN pip install adafruit-pca9685
-
+RUN pip install pyserial
 
 # Install packages for web application
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
